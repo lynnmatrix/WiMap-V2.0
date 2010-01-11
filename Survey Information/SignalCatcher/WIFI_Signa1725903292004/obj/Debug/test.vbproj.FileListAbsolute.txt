@@ -1,0 +1,9 @@
+C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\obj\Debug\test.pdb
+C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\bin\test.exe
+C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\bin\test.pdb
+C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\bin\test.xml
+C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\obj\Debug\ResolveAssemblyReference.cache
+C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\obj\Debug\test.Form1.resources
+C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\obj\Debug\test.vbproj.GenerateResource.Cache
+C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\obj\Debug\test.exe
+C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\obj\Debug\test.xml

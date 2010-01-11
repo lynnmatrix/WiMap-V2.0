@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="test">
+</Property><Property Name="解决方案文件" Value="C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\test.sln">
+</Property><Property Name="用户选项文件" Value="C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\test.suo">
+</Property><Property Name="Date" Value="2010年1月6日">
+</Property><Property Name="Time" Value="20:03">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="test.sln" Description="文件已成功备份为 C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\Backup\test.sln">
+</Event><Event ErrorLevel="0" Project="" Source="test.suo" Description="文件已成功备份为 C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\Backup\test.suo">
+</Event><Event ErrorLevel="0" Project="test" Source="test.vbproj" Description="项目文件已成功备份为 C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\Backup\test.vbproj">
+</Event><Event ErrorLevel="0" Project="test" Source="test.vbproj.user" Description="项目用户文件成功备份为 C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\Backup\test.vbproj.user">
+</Event><Event ErrorLevel="0" Project="test" Source="AssemblyInfo.vb" Description="文件已成功备份为 C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\Backup\AssemblyInfo.vb">
+</Event><Event ErrorLevel="0" Project="test" Source="Form1.vb" Description="文件已成功备份为 C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\Backup\Form1.vb">
+</Event><Event ErrorLevel="0" Project="test" Source="WifiStrength.vb" Description="文件已成功备份为 C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\Backup\WifiStrength.vb">
+</Event><Event ErrorLevel="0" Project="test" Source="Form1.resx" Description="文件已成功备份为 C:\Documents and Settings\Lynn\桌面\WIFI_Signa1725903292004\Backup\Form1.resx">
+</Event><Event ErrorLevel="0" Project="test" Source="test.vbproj" Description="项目已成功转换">
+</Event><Event ErrorLevel="3" Project="test" Source="test.vbproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="test.sln" Description="成功转换解决方案">
+</Event><Event ErrorLevel="3" Project="" Source="test.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="test" Source="test.vbproj" Description="扫描完成: 项目文件不需要升级。">
+</Event></UpgradeLog>
