@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--  ApplicationContext.xml -->
+<!DOCTYPE beans PUBLIC "-//SPRING//DTD BEAN//EN"
+ "http://www.springframework.org/dtd/spring-beans.dtd">
+<beans>
+
+    <!-- 数据源配置 mysql -->
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource"
+    destroy-method="close">
+        <property name="driverClassName">
+            <value>com.mysql.jdbc.Driver</value>
+        </property>
+        <property name="url">
+            <value>jdbc:mysql://localhost:3306/zktest</value>
+        </property>
+        <property name="username">
+            <value>root</value>
+        </property>
+        <property name="password">
+            <value>jingxing05</value>
+        </property>
+    </bean>
+    
+    <!-- SessionFactory 配置   -->
+    <!-- 注入各种实体如数据源等   -->
+    <bean id="wimapfactory"
+    class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+        <property name="mappingResources">       
+            <!-- 配置各个pojo或者说model实体的hibernate到数据库表的映射   -->
+            <list>               
+                <value>org/ict/wimap/model/building/Building.hbm</value> 
+                <!-- 配置其他数据表   -->
+                <!-- 
+                    <value>org/ict/wimap/model/building/Building.hbm</value> 
+                -->        
+            </list>
+        </property>
+        <property name="hibernateProperties">
+            <props>
+                <prop key="hibernate.dialect">
+                  org.hibernate.dialect.MySQLDialect
+                </prop>
+                <prop key="hibernate.show_sql">false</prop>
+                <prop key="hibernate.transaction.factory_class">
+                  org.hibernate.transaction.JDBCTransactionFactory
+                </prop>
+            </props>
+        </property>
+        <property name="dataSource">
+            <ref bean="dataSource"/>
+        </property>
+    </bean>
+    
+    <!-- 注入各个Manager业务逻辑的DAO操作类   -->
+    
+    <bean id="buildingDao" class="org.ict.wimap.dao.building.BuildingDAO">
+        <property name="sessionFactory">
+            <ref bean="wimapfactory" />
+        </property>
+    </bean>
+    
+    <bean id="buildingManager" class="org.ict.wimap.service.impl.BuildingManagerImpl">
+        <property name="buildingdao">
+            <ref bean="buildingDao"/>
+        </property>
+    </bean>
+</beans>

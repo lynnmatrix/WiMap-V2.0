@@ -1,0 +1,6 @@
+<?page title="The view of selected floor !" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="The view of selected floor !" border="normal">
+The 8th floor has this view ,total 30 rooms.
+</window>
+</zk>

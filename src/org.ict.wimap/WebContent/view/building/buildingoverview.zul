@@ -1,0 +1,6 @@
+<?page title="The Overview of the building" contentType="text/html;charset=UTF-8"?>
+<zk>
+<window title="The Overview of the building" border="normal">
+ICT has 16 floors !
+</window>
+</zk>

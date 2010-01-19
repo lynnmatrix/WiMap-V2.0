@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+	"-//Hibernate/Hibernate Mapping DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd" >
+
+<hibernate-mapping package="org.ict.wimap.model.building">
+	<class
+		name="Building"
+		table="building"
+	>
+		<meta attribute="sync-DAO">false</meta>
+		<id
+			name="Id"
+			type="integer"
+			column="bid"
+		>
+			<generator class="increment"/>
+		</id>
+
+		<property
+			name="Bjingdu"
+			column="bjingdu"
+			type="big_decimal"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="Bweidu"
+			column="bweidu"
+			type="big_decimal"
+			not-null="true"
+			length="10"
+		/>
+		<property
+			name="Floornum"
+			column="floornum"
+			type="java.lang.Short"
+			not-null="true"
+			length="5"
+		/>
+
+
+	</class>	
+</hibernate-mapping>

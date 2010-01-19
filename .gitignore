@@ -1,0 +1,5 @@
+*.bak
+*\src\org.ict.wimap\build\*
+*\bin\*
+*.jar
+*.svn*

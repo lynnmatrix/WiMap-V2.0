@@ -1,0 +1,39 @@
+<?page title="The view of selected floor !" contentType="text/html;charset=UTF-8"?>
+<zk>
+<?init class="org.ict.wimap.ui.building.ListBuildings"?>
+
+<window
+    id="win" xmlns="http://www.zkoss.org/2005/zul"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.zkoss.org/2005/zul http://www.zkoss.org/2005/zul/zul.xsd"
+	position="center,top">
+	<script type= "" content="zk.googleAPIkey='ABQIAAAA_oP1nxYI3ADHWV5_ahr8whS5dQz-zRKxortwL6FHT46kD4sFVRSp29IF6O6CzDt3KtU-1HAkQU4cpA'" />
+	<gmaps id="map" width="320px" height="180px" showLargeCtrl="true" showTypeCtrl="true" lat="39.9819" lng="116.3270">
+		<attribute name="onMapMove">
+			center.setValue(""+self.lat+","+self.lng);
+		</attribute>
+		<attribute name="onMapZoom">
+			zoom.setCurpos(self.zoom);
+		</attribute>
+	</gmaps>
+	<button label="panTo" onClick="map.panTo(39.9819, 116.3273)"/>
+	<label id="center" value="${map.lat},${map.lng}"/>
+	<slider id="zoom" maxpos="17" curpos="${map.zoom}" onScroll="map.setZoom(self.curpos)"/>
+	
+	<vbox>
+	  <listbox id="buildingList" width="320px" rows="5">
+	    <listhead>
+	      <listheader label="Weidu"/>
+	      <listheader label="Jingdu"/>
+	      <listheader label="Jingdu"/>
+	    </listhead>
+	    <listitem value="${each.id}" forEach="${allBuildings}">
+	        <listcell>${each.bweidu }</listcell>
+	        <listcell>${each.bjingdu }</listcell>
+	        <listcell>${each.floornum }</listcell>
+	    </listitem>
+	  </listbox>	
+</vbox>
+	
+</window>
+</zk>
